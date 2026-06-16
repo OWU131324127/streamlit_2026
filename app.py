@@ -4,7 +4,7 @@ import requests
 
 idol_images = {
     "きゅるりんってしてみて": "images/kyururin.jpg",
-    "なにわ男子": "images/naiwa.jpg",
+    "なにわ男子": "images/naniwa.jpg",
     "パンダドラゴン": "images/panda.jpg",
     "LE SSERAFIM": "images/rusera.jpg",
     "M!LK": "images/milk.jpeg",
