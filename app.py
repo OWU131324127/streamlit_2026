@@ -7,7 +7,7 @@ idol_images = {
     "なにわ男子": "images/naiwa.jpg",
     "パンダドラゴン": "images/panda.jpg",
     "LE SSERAFIM": "images/rusera.jpg",
-    "M!LK": "images/milk.jpg",
+    "M!LK": "images/milk.jpeg",
     "WEST.": "images/west.jpg",
     "中島健人": "images/kento.jpg",
     "Travis Japan": "images/travis.jpg",
@@ -32,6 +32,32 @@ idol_images = {
     "NewJeans": "images/newjeans.jpg",
     "Juice=Juice": "images/juice.jpg",
     "Buono!": "images/buono.jpg",
+    "BABYMONSTER": "images/babym.webp",
+    "日向坂46": "images/hinatazaka.jpg",
+    "Kis-My-Ft2": "images/kismyft2.jpg",
+    "Snow Man": "images/snowman.jpg",
+    "らぶしっく": "images/lovesick.jpg",
+    "Kep1er": "images/kep1er.jpg",
+    "IZ*ONE": "images/izone.jpg",
+    "悪魔のキッス": "images/akumanokiss.jpg",
+    "AiScReam": "images/aiscream.jpg",
+    "Billie": "images/billie.jpg",
+    "SixTones": "images/sixtones.jpg",
+    "B小町": "images/bkomachi.avif",
+    "aespa": "images/aespa.png",
+    "AVAM": "images/avam.jfif",
+    "いぎなり東北産": "images/tohokusan.jpg",
+    "SEVENTEEN": "images/seventeen.webp",
+    "OH MY GIRL": "images/ohmygirl.jpg",
+    "ILLIT": "images/illit.jpg",
+    "最終未来少女": "images/saishumirai.png",
+    "CANDY TUNE": "images/candytune.jpg",
+    "MISAMO": "images/misamo.webp",
+    "CUTIE STREET": "images/cutiestreet.jpeg",
+    "SAY MY NAME": "images/saymyname.jpg",
+    "NMIXX": "images/nmixx.jpg",
+    "=LOVE": "images/equalslove.webp",
+
 }
 
 st.title("🎤 推し発見！アイドルおみくじ")
@@ -273,7 +299,7 @@ if st.button("🎯 アイドルおみくじを引く"):
         song = "Mood"
 
     elif number <= 52:
-        idol = "SnowMan"
+        idol = "Snow Man"
         song = "タペストリー"
 
     elif number <= 53:
@@ -301,7 +327,7 @@ if st.button("🎯 アイドルおみくじを引く"):
         song = "GingaMingaYo"
 
     elif number <= 59:
-        idol = "Six Tones"
+        idol = "SixTones"
         song = "こっから"
 
     elif number <= 60:
