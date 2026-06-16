@@ -41,7 +41,7 @@ idol_images = {
     "IZ*ONE": "images/izone.jpg",
     "悪魔のキッス": "images/akumanokiss.jpg",
     "AiScReam": "images/aiscream.jpg",
-    "Billie": "images/billie.jpg",
+    "Billie": "images/billlie.jpg",
     "SixTones": "images/sixtones.jpg",
     "B小町": "images/bkomachi.avif",
     "aespa": "images/aespa.png",
