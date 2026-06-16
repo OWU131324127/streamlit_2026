@@ -32,7 +32,7 @@ idol_images = {
     "NewJeans": "images/newjeans.jpg",
     "Juice=Juice": "images/juice.jpg",
     "Buono!": "images/buono.jpg",
-    "BABYMONSTER": "images/babym.webp",
+    "BABYMONSTER": "images/baby.webp",
     "日向坂46": "images/hinatazaka.jpg",
     "Kis-My-Ft2": "images/kismyft2.jpg",
     "Snow Man": "images/snowman.jpg",
