@@ -13,7 +13,7 @@ idol_images = {
     "Travis Japan": "images/travis.jpg",
     "BIGBANG": "images/bigbang.jpg",
     "BTS": "images/bts.webp",
-    "乃木坂46": "images/nagizaka.jpg",
+    "乃木坂46": "images/nogizaka.jpg",
     "TWICE": "images/twice.avif",
     "TWS": "images/tws.jpg",
     "IVE": "images/ive.jpg",
