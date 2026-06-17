@@ -60,8 +60,21 @@ idol_images = {
 
 }
 
+# 履歴保存用
+if "history" not in st.session_state:
+    st.session_state.history = []
+
 st.title("🎤 推し発見！アイドルおみくじ")
 st.caption("好きな数字から今日の推しを診断！")
+
+# サイドバー
+st.sidebar.title("📜 おみくじ履歴")
+
+if st.session_state.history:
+    for item in st.session_state.history:
+        st.sidebar.write(item)
+else:
+    st.sidebar.write("まだ履歴はありません")
 
 # 入力
 name = st.text_input("名前を入力してください")
@@ -437,6 +450,14 @@ if st.button("🎯 アイドルおみくじを引く"):
 
     fortune = random.choice(fortunes)
     action = random.choice(actions)
+
+    # 履歴に追加
+    result = f"{idol}（{song}）｜{fortune}"
+    st.session_state.history.insert(0, result)
+    
+    # 最新10件だけ残す
+    st.session_state.history = st.session_state.history[:10]
+
 
     st.markdown("---")
 
