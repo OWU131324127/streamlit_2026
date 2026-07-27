@@ -11,7 +11,7 @@ st.markdown("""
 
 /* 背景 */
 .stApp {
-    background: #dff4ff;
+    background: #c7e7f7;
 }
 
 /* タイトル */
