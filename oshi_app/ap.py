@@ -324,6 +324,45 @@ with home_tab:
     col4.metric("🎤 ライブ回数", len(live_df))
     col5.metric("📅 今月の支出", f"¥{month_total:,}")
 
+        # 月ごとの推し活費グラフ
+    st.divider()
+
+    st.subheader("📊 月ごとの推し活費")
+
+    if len(df) > 0:
+
+        graph_df = df.copy()
+
+        # 日付を年月に変換
+        graph_df["月"] = pd.to_datetime(
+            graph_df["日付"]
+        ).dt.strftime("%Y年%m月")
+
+        # 月ごとの合計金額
+        monthly_money = (
+            graph_df
+            .groupby("月")["金額"]
+            .sum()
+            .reset_index()
+        )
+
+        fig = px.bar(
+            monthly_money,
+            x="月",
+            y="金額",
+            title="月別 推し活費"
+        )
+
+        fig.update_layout(
+            xaxis_title="月",
+            yaxis_title="金額（円）"
+        )
+
+        st.plotly_chart(fig, use_container_width=True)
+
+    else:
+        st.info("まだ購入記録がありません")
+
 with goods_tab:
     st.title("🛍 グッズ購入記録")
 
